@@ -1,0 +1,19 @@
+<div>
+    <h1>User List</h1>
+    <table>
+       <thead>
+          <tr>
+             <th>Name</th>
+             <th>Middle Name</th>
+             <th>Last Name</th>
+          </tr>
+       </thead>
+       <tbody>
+          <tr *ngFor="let item of UserArray">
+             <th>{{ item.useName }}</th>
+             <td>{{ item.middleName }}</td>
+             <td>{{ item.lastName }}</td>
+          </tr>
+       </tbody>
+    </table>
+ </div>
